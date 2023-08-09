@@ -46,7 +46,7 @@ const History = () => {
                 <TdSC>{cycle.task}</TdSC>
                 <TdSC>{cycle.minutesAmount} minutos</TdSC>
                 <TdSC>
-                  {formatDistanceToNow(cycle.startDate, {
+                  {formatDistanceToNow(new Date(cycle.startDate), {
                     addSuffix: true,
                     locale: ptBR,
                   })}
